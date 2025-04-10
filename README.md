@@ -26,11 +26,24 @@ G.  Update the pipeline
 H.  Update the main.py  
 I.  Update the app.py  
 
-We will perform all our the above operations for each data-science project stage.
+We will perform all our the above operations for each data-science project stage.  
+We will perform modular coding ( OOps Programming ).
 
 ------------------------------------------------------------------------------------------------------------
 
 ## STAGE 01: Data Ingestion 
+
+A. We will add all our configurations in this file. ( We will create an artifact folder to save our outputs.)  
+B. We don't need this as of now.
+C. We don't need this as of now.
+D. We need to create the entity ( A return type of a function ) to read the config.yaml, we need to create the constructor file inside src/project_name/constants. This will help us locating all the yaml paths into our codes.
+E. Add the configuration manager. It will return all the variables, add the data, and check the return type.
+F. Add the required components needed in that stage. Downloading/Adding Features/EDA/PCA etc.
+G. Update the pipeline for that stage.
+
+
+
+
 
 
 
