@@ -109,6 +109,8 @@ def load_bin(path: Path) -> Any:
     logger.info(f"binary file loaded from: {path}")
     return data
 
+# Checking the Updates.
+
 
 
 @ensure_annotations
