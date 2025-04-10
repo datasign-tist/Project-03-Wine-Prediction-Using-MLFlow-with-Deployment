@@ -16,7 +16,7 @@ This repository contains a comprehensive end-to-end data science project that fo
 ## Now, we will follow the workflow that will be processed for each data science project step.
 
 ### The Workflow Structure :
-A.  Update config.yaml.
+A.  Update config.yaml  
 B.  Update schema.yaml.
 C.  Update params.yaml.
 D.  Update the entity.
