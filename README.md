@@ -16,23 +16,15 @@ This repository contains a comprehensive end-to-end data science project that fo
 ## Now, we will follow the workflow that will be processed for each data science project step.
 
 ### The Workflow Structure :
-  A. Update config.yaml
-  
-  B. Update schema.yaml
-  
-  C. Update params.yaml
-  
-  D. Update the entity
-  
-  E. Update the configuration manager in src config
-  
-  F. Update the components
-  
-  G. Update the pipeline  
-  
-  H. Update the main.py
-  
-  I. Update the app.py
+A.  Update config.yaml.
+B.  Update schema.yaml.
+C.  Update params.yaml.
+D.  Update the entity.
+E.  Update the configuration manager in src config.
+F.  Update the components.
+G.  Update the pipeline. 
+H.  Update the main.py.
+I.  Update the app.py.
 
   We will perform all our the above operations for each data-science project stage.
 
