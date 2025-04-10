@@ -40,6 +40,11 @@ D. We need to create the entity ( A return type of a function ) to read the conf
 E. Add the configuration manager. It will return all the variables, add the data, and check the return type.  
 F. Add the required components needed in that stage. Downloading/Adding Features/EDA/PCA, etc.  
 G. Update the pipeline for that stage.  
+H. Update the main.py
+
+( Perform all these steps for the below Stages, and then we will create our app.py for deployment. )
+
+## STAGE 02: Data Validation
 
 
 
