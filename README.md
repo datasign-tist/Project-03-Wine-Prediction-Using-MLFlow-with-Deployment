@@ -13,7 +13,7 @@ This repository contains a comprehensive end-to-end data science project that fo
 
 ------------------------------------------------------------------------------------------------------------
 
-## Now we will follow the workflow that will be processed for each data science project step
+## Now, we will follow the workflow that will be processed for each data science project step.
 
 ### The Workflow Structure :
   A. Update config.yaml
@@ -26,7 +26,7 @@ This repository contains a comprehensive end-to-end data science project that fo
   H. Update the main.py
   I. Update the app.py
 
-  We will perform all our above operations for each data-science project stage.
+  We will perform all our the above operations for each data-science project stage.
 
 ------------------------------------------------------------------------------------------------------------
 
