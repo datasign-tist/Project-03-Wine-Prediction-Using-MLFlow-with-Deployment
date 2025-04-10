@@ -1,0 +1,8 @@
+artifacts_root: artifacts
+
+
+data_ingestion:
+  root_dir: artifacts/Stage01_Data_Ingestion
+  source_URL: https://github.com/datasign-tist/Data-Repository/raw/refs/heads/main/Wine_Quality_Data.zip
+  local_data_file: artifacts/Stage01_Data_Ingestion/Data.zip
+  unzip_dir: artifacts/Stage01_Data_Ingestion
