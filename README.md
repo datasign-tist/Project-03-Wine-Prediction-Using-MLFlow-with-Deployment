@@ -34,8 +34,8 @@ We will perform modular coding (OOPs Programming).
 ## STAGE 01: Data Ingestion 
 
 A. We will add all our configurations to this file. ( We will create an artifact folder to save our outputs.)  
-B. We don't need this as of now.  
-C. We don't need this as of now.  
+B. We don't need this at the moment.  
+C. We don't need this at the moment.  
 D. We need to create the entity ( A return type of a function ) to read the config.yaml, we need to create the constructor file inside src/project_name/constants. This will help us locate all the yaml paths in our code.  
 E. Add the configuration manager. It will return all the variables, add the data, and check the return type.  
 F. Update the components folder needed in that stage. Downloading/Adding Features/EDA/PCA, etc.  
@@ -49,7 +49,7 @@ H. Update the main.py
 In this stage, we will perform all operations, but will update the schema.yaml file to add the schema of the data.
 
 ## STAGE 03: Data Transformation
-
+## STAGE 03: Data Modelling
 
 
 
