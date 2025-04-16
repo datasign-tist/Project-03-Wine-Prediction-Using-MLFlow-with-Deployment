@@ -2,12 +2,16 @@ artifacts_root: artifacts
 
 
 data_ingestion:
-  root_dir: artifacts/Stage01_Data_Ingestion
-  source_URL: https://github.com/datasign-tist/Data-Repository/raw/refs/heads/main/Wine_Quality_Data.zip
-  local_data_file: artifacts/Stage01_Data_Ingestion/Data.zip
-  unzip_dir: artifacts/Stage01_Data_Ingestion
+  root_dir        : artifacts/Stage01_Data_Ingestion
+  source_URL      : https://github.com/datasign-tist/Data-Repository/raw/refs/heads/main/Wine_Quality_Data.zip
+  local_data_file : artifacts/Stage01_Data_Ingestion/Data.zip
+  unzip_dir       : artifacts/Stage01_Data_Ingestion
 
 data_validation:
-  root_dir: artifacts/Stage02_Data_Validation
-  unzip_data_dir: artifacts/Stage01_Data_Ingestion/winequality-red.csv
-  STATUS_FILE: artifacts/Stage02_Data_Validation/status.txt
+  root_dir       : artifacts/Stage02_Data_Validation
+  unzip_data_dir : artifacts/Stage01_Data_Ingestion/winequality-red.csv
+  STATUS_FILE    : artifacts/Stage02_Data_Validation/status.txt
+
+data_transformation:
+  root_dir  : artifacts/Stage03_Data_Transformation
+  data_path : artifacts/Stage01_Data_Ingestion/winequality-red.csv
