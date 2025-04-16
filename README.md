@@ -49,7 +49,10 @@ H. Update the main.py
 In this stage, we will perform all operations, but will update the schema.yaml file to add the schema of the data.
 
 ## STAGE 03: Data Transformation
-## STAGE 03: Data Modelling
+
+Perform all the above workflow.
+
+## STAGE 04: Data Modelling
 
 
 
