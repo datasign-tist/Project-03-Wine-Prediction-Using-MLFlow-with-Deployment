@@ -54,6 +54,9 @@ Perform all the above workflow.
 
 ## STAGE 04: Data Modelling
 
+Update the Schema ( for the target variable ) and params.yaml for the hyperparameters. 
+
+## STAGE 05: Model Evaluation
 
 
 
