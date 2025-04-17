@@ -67,99 +67,64 @@ B. mlflow ui
 ### dagshub
 C. Go to Dagshub: (https://dagshub.com/) and run below to export as env variables:
 
-``` import dagshub
-dagshub.init(repo_owner='datasign-tist', repo_name='Project-03-Wine-Prediction-Using-MLFlow-with-Deployment', mlflow=True)
+Add the first 2 lines inside the components/Stage05_Model_Evaluation.py file.
 
-import mlflow
-with mlflow.start_run():
-  mlflow.log_param('parameter name', 'value')
-  mlflow.log_metric('metric name', 1)
 ```
+import dagshub
+import mlflow
+dagshub.init(repo_owner='datasign-tist', repo_name='Project-03-Wine-Prediction-Using-MLFlow-with-Deployment', mlflow=True)
+```
+## Testing Pipeline
+Here training pipeline is completed, we need to create the prediction pipeline.
+Using index.html, CSS and Flask, we can use this and run app.py.
 
-# AWS-CICD-Deployment-with-Github-Actions
+#### Run it locally using the app.py code, where we have used the Bootstrap website to create an HTML file for input and output, using Flask.
+------------------------------------------------------------------------------------------------------------
 
-## 1. Login to AWS console.
+## Follow the process below to run it in the AWS ( CICD Deployment ) with GitHub Actions.
 
-## 2. Create IAM user for deployment
+### 1. Log in to the AWS console.
+### 2. Create an IAM user for deployment.
 
-	#with specific access
-
-	1. EC2 access : It is virtual machine
-
-	2. ECR: Elastic Container registry to save your docker image in aws
-
+	1. EC2 access: It is a virtual machine.
+	2. ECR: Elastic Container Registry to save your Docker image in AWS.
 
 	#Description: About the deployment
-
-	1. Build docker image of the source code
-
-	2. Push your docker image to ECR
-
+	1. Build a Docker image of the source code.
+	2. Push your Docker image to ECR
 	3. Launch Your EC2 
-
-	4. Pull Your image from ECR in EC2
-
+	4. Pull your image from ECR in EC2
 	5. Lauch your docker image in EC2
 
 	#Policy:
-
 	1. AmazonEC2ContainerRegistryFullAccess
-
 	2. AmazonEC2FullAccess
 
-	
-## 3. Create ECR repo to store/save docker image
+## 3. Create an ECR repo to store/save a Docker image.
     - Save the URI: 566373416292.dkr.ecr.ap-south-1.amazonaws.com/mlproj
-
 	
-## 4. Create EC2 machine (Ubuntu) 
-
+## 4. Create an EC2 machine (Ubuntu) 
 ## 5. Open EC2 and Install docker in EC2 Machine:
 	
 	
-	#optinal
-
-	sudo apt-get update -y
-
-	sudo apt-get upgrade
-	
 	#required
-
 	curl -fsSL https://get.docker.com -o get-docker.sh
-
 	sudo sh get-docker.sh
-
 	sudo usermod -aG docker ubuntu
-
 	newgrp docker
 	
-# 6. Configure EC2 as self-hosted runner:
+# 6. Configure EC2 as a self-hosted runner:
     setting>actions>runner>new self hosted runner> choose os> then run command one by one
 
-
-# 7. Setup github secrets:
+# 7. Set up GitHub secrets:
 
     AWS_ACCESS_KEY_ID=
-
     AWS_SECRET_ACCESS_KEY=
-
     AWS_REGION = us-east-1
-
     AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
-
     ECR_REPOSITORY_NAME = simple-app
 
-
-
-
-## About MLflow 
-MLflow
-
- - Its Production Grade
- - Trace all of your expriements
- - Logging & tagging your model
-
-
+------------------------------------------------------------------------------------------------------------
 
 
 
