@@ -80,7 +80,6 @@ class ConfigurationManager:
             target_column = schema.name
             
         )
-
         return model_trainer_config
     
 
