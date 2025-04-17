@@ -67,16 +67,17 @@ B. mlflow ui
 ### dagshub
 C. Go to Dagshub: (https://dagshub.com/) and run below to export as env variables:
 
-``` import dagshub
-dagshub.init(repo_owner='datasign-tist', repo_name='Project-03-Wine-Prediction-Using-MLFlow-with-Deployment', mlflow=True)
+Add the first 2 lines inside the components/Stage05_Model_Evaluation.py file.
 
-import mlflow
-with mlflow.start_run():
-  mlflow.log_param('parameter name', 'value')
-  mlflow.log_metric('metric name', 1)
 ```
+import dagshub
+import mlflow
+dagshub.init(repo_owner='datasign-tist', repo_name='Project-03-Wine-Prediction-Using-MLFlow-with-Deployment', mlflow=True)
+```
+#### Run it locally using the app.py code, where we have used the Bootstrap website to create an HTML file for input and output, using Flask.
+------------------------------------------------------------------------------------------------------------
 
-# AWS-CICD-Deployment-with-Github-Actions
+## Follow the process below to run it in the AWS ( CICD Deployment ) with GitHub Actions.
 
 ## 1. Login to AWS console.
 
@@ -148,16 +149,6 @@ with mlflow.start_run():
     AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
 
     ECR_REPOSITORY_NAME = simple-app
-
-
-
-
-## About MLflow 
-MLflow
-
- - Its Production Grade
- - Trace all of your expriements
- - Logging & tagging your model
 
 
 
