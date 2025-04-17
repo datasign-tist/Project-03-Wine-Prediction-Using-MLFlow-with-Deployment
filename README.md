@@ -74,6 +74,10 @@ import dagshub
 import mlflow
 dagshub.init(repo_owner='datasign-tist', repo_name='Project-03-Wine-Prediction-Using-MLFlow-with-Deployment', mlflow=True)
 ```
+## Testing Pipeline
+Here training pipeline is completed, we need to create the prediction pipeline.
+Using index.html, CSS and Flask, we can use this and run app.py.
+
 #### Run it locally using the app.py code, where we have used the Bootstrap website to create an HTML file for input and output, using Flask.
 ------------------------------------------------------------------------------------------------------------
 
