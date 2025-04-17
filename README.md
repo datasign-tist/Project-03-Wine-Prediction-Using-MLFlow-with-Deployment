@@ -79,9 +79,9 @@ dagshub.init(repo_owner='datasign-tist', repo_name='Project-03-Wine-Prediction-U
 
 ## Follow the process below to run it in the AWS ( CICD Deployment ) with GitHub Actions.
 
-## 1. Login to AWS console.
+### 1. Login to AWS console.
 
-## 2. Create IAM user for deployment
+### 2. Create IAM user for deployment
 
 	#with specific access
 
