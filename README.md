@@ -13,7 +13,7 @@ This repository contains a comprehensive end-to-end data science project that fo
 
 ------------------------------------------------------------------------------------------------------------
 
-## Now, we will follow the workflow that will be processed for each data science project step.
+## Now, we will follow the workflow process for each data science project step.
 
 ### The Workflow Structure :
 A.  Update config.yaml  
@@ -38,7 +38,7 @@ B. We don't need this at the moment.
 C. We don't need this at the moment.  
 D. We need to create the entity ( A return type of a function ) to read the config.yaml, we need to create the constructor file inside src/project_name/constants. This will help us locate all the yaml paths in our code.  
 E. Add the configuration manager. It will return all the variables, add the data, and check the return type.  
-F. Update the components folder needed in that stage. Downloading/Adding Features/EDA/PCA, etc.  
+F. Update the components folder needed in that stage, such as downloading/Adding Features/EDA/PCA, etc.  
 G. Update the pipeline for that stage.  
 H. Update the main.py
 
@@ -65,7 +65,7 @@ A. Documentation:(https://mlflow.org/docs/latest/index.html)
 ### CMD
 B. mlflow ui
 ### dagshub
-C. Go to Dagshub: (https://dagshub.com/)
+C. Go to Dagshub: (https://dagshub.com/) and run below to export as env variables:
 
 ``` import dagshub
 dagshub.init(repo_owner='datasign-tist', repo_name='Project-03-Wine-Prediction-Using-MLFlow-with-Deployment', mlflow=True)
@@ -75,20 +75,6 @@ with mlflow.start_run():
   mlflow.log_param('parameter name', 'value')
   mlflow.log_metric('metric name', 1)
 ```
-
-Run this to export as env variables:
-
-```bash
-
-export MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/End-to-end-Machine-Learning-Project-with-MLflow.mlflow
-
-export MLFLOW_TRACKING_USERNAME=entbappy 
-
-export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
-
-```
-
-
 
 # AWS-CICD-Deployment-with-Github-Actions
 
