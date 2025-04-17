@@ -8,7 +8,7 @@ app = Flask(__name__) # initializing a flask app
 
 @app.route('/',methods=['GET'])  # route to display the home page
 def homePage():
-    return render_template("templates/index.html")
+    return render_template("index.html")
 
 @app.route('/train',methods=['GET'])  # route to train the pipeline
 def training():
@@ -38,14 +38,14 @@ def index():
             obj = PredictionPipeline()
             predict = obj.predict(data)
 
-            return render_template('templates/results.html', prediction = str(predict))
+            return render_template('results.html', prediction = str(predict))
 
         except Exception as e:
             print('The Exception message is: ',e)
             return 'Something is wrong'
 
     else:
-        return render_template('templates/index.html')
+        return render_template('index.html')
 
 
 if __name__ == "__main__":
