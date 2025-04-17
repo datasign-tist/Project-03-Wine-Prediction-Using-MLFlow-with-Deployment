@@ -60,20 +60,21 @@ Update the Schema ( for the target variable ) and params.yaml for the hyperparam
 
 In this important stage, we will configure MLflow and Dagshub to run and understand the model outputs. 
 
-### MLflow
-
-[Documentation](https://mlflow.org/docs/latest/index.html)
-
-##### cmd
-- mlflow ui
-
+### MLflow 
+A. Documentation:(https://mlflow.org/docs/latest/index.html)
+### CMD
+B. mlflow ui
 ### dagshub
-[dagshub](https://dagshub.com/)
+C. Go to Dagshub: (https://dagshub.com/)
 
-MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/End-to-end-Machine-Learning-Project-with-MLflow.mlflow \
-MLFLOW_TRACKING_USERNAME=entbappy \
-MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0 \
-python script.py
+``` import dagshub
+dagshub.init(repo_owner='datasign-tist', repo_name='Project-03-Wine-Prediction-Using-MLFlow-with-Deployment', mlflow=True)
+
+import mlflow
+with mlflow.start_run():
+  mlflow.log_param('parameter name', 'value')
+  mlflow.log_metric('metric name', 1)
+```
 
 Run this to export as env variables:
 
