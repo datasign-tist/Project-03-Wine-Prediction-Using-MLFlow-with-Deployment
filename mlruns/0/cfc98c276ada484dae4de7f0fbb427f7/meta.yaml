@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/cfc98c276ada484dae4de7f0fbb427f7/artifacts
+end_time: 1744895234767
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cfc98c276ada484dae4de7f0fbb427f7
+run_name: chill-shad-519
+run_uuid: cfc98c276ada484dae4de7f0fbb427f7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744895232852
+status: 4
+tags: []
+user_id: abhisheksharma
